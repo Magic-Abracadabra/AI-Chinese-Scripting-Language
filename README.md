@@ -2,7 +2,7 @@
 [Project Link](https://github.com/Magic-Abracadabra/AI-Chinese-Scripting-Language)
 
 # Introduction
-This is a very simple Chinese Scripting Language powered by AI (control group). You can use it to open any text file. **No illegal use is allowed!** Free for commercial use and academic use.
+(Control Group of My Future Paper) This is a very simple Chinese Scripting Language powered by AI. You can use it to open any text file. **No illegal use is allowed!** Free for commercial and academic applications.
 
 # Requirements:
 1. OS: Windows
