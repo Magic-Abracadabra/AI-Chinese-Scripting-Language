@@ -12,3 +12,4 @@ This is a Chinese Scripting Language powered by AI (it's a comparison version fo
 1. Download this whole project
 2. Modify file "main.cmd" and change "python" to your actual python.exe (your filepath of the python kernel)
 3. Open a text script (e.g., ".aigc") with "main.cmd"
+4. replace "your-api-key" with your authentic API key in "main.py"
