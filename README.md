@@ -7,7 +7,7 @@ This is a Chinese Scripting Language powered by AI (it's a comparison version fo
 # Requirements:
 1. OS: Windows
 2. A python environment
-3. An API key of 360 AI
+3. An API key of 360 AI [click here to apply](https://ai.360.com/open)
 # Usage:
 1. Download this whole project
 2. Modify file "main.cmd" and change "python" to your actual python.exe (your filepath of the python kernel)
