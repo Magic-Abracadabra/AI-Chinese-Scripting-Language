@@ -42,11 +42,13 @@ prompts = "现在，你拥有控制计算机的能力。在本平台中，你是
 if len(sys.argv) == 1:
 	while True:
 		user_input = input('【我】')
-		try:
-			execute(user_input)
-		except:
-			print('【出错，重新尝试】')
-			execute(user_input+'\n实际执行过程中出错，报错信息如下：'+traceback.format_exc()+'\n请你针对错误，重新给出修正版的完整解决方案，不要输出之前的代码，直接输出你更正之后的代码')
+		while Incorrect:
+			try:
+				execute(user_input)
+				Incorrect = False
+			except:
+				print('【出错，重新尝试】')
+				user_input+='\n实际执行过程中出错，报错信息如下：'+traceback.format_exc()+'\n请你针对错误，重新给出修正版的完整解决方案，不要输出之前的代码，直接输出你更正之后的代码'
 else:
 	with open(sys.argv[1], encoding='utf-8') as scripts:
 		execute(scripts.read())
