@@ -32,11 +32,11 @@ def conversation(contents, chat_mode=False):
 
 def execute(commands):
 	global history
-	user_input = commands
 	Incorrect = True
+	user_input = commands
 	while Incorrect:
 		try:
-			RT = conversation(prompts+commands)
+			RT = conversation(prompts+user_input)
 			print('【AI】'+RT)
 			commands = RT.split('```')[1::2]
 			for item in commands:
