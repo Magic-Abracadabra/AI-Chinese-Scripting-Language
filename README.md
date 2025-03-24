@@ -4,7 +4,10 @@
 # Introduction
 (Control Group of My Future Paper, without Task Planning, Exceptional Handling, fully based on LLMs) This is a _quick start_ of one Chinese Scripting Language powered by AI. You can use it to open any text file. **No illegal use is allowed!** Free for commercial and academic applications.
 
-[video(video-4kBYfoMn-1742799346051)(type-csdn)(url-https://live.csdn.net/v/embed/470485)(image-https://i-blog.csdnimg.cn/img_convert/477f3d5d69c31d0594102dadf95b2e47.jpeg)(title-AIGC脚本语言Demo1)]
+
+<video width="320" height="240" controls> 
+  <source src="https://live.csdn.net/v/embed/470485" type="video/mp4"> 
+</video> 
 
 # Requirements:
 1. OS: Windows
