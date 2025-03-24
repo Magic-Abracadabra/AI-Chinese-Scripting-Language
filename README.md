@@ -1,17 +1,7 @@
 # Introduction
 (Control Group of My Future Paper, without Task Planning, Exceptional Handling, fully based on LLMs) This is a _quick start_ of one Chinese Scripting Language powered by AI. You can use it to open any text file. **No illegal use is allowed!** Free for commercial and academic applications.
 
-
-<iframe
-    width="100%"  
-    height="450"  
-    src="//live.csdn.net/v/embed/470485"  
-    scrolling="no"  
-    border="0"  
-    frameborder="no"  
-    framespacing="0"  
-    allowfullscreen="true"> 
-</iframe> 
+https://github.com/user-attachments/assets/1dae04e6-2683-4465-8a9f-7df8ba539bc6
 
 
 # Requirements:
