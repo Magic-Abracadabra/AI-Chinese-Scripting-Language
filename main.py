@@ -2,7 +2,7 @@ import requests, json, sys, traceback
 def conversation(contents, chat_mode=False):
   url = "https://api.360.cn/v1/chat/completions"
   payload = json.dumps({
-    "model": "360gpt2-pro",
+    "model": "360/deepseek-r1",
     "messages": [
       {
         "role": "user",
