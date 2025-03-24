@@ -44,7 +44,7 @@ def execute(commands):
 					exec(item[7:])
 					Incorrect = False
 		except:
-			print('【出错，重新尝试】')
+			print('【出错，尝试纠正中】')
 			user_input+='\n实际执行过程中出错，报错信息如下：'+traceback.format_exc()+'\n请你针对错误，重新给出修正版的完整解决方案，不要输出之前的代码，直接输出你更正之后的代码'
 	history += user_input
 	history += '\n'
