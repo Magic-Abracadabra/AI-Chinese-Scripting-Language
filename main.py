@@ -42,7 +42,7 @@ prompts = "现在，你拥有控制计算机的能力。在本平台中，你是
 if len(sys.argv) == 1:
 	while True:
 		user_input = input('【我】')
-		Incorrect = False
+		Incorrect = True
 		while Incorrect:
 			try:
 				execute(user_input)
