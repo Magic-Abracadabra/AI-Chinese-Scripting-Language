@@ -1,5 +1,5 @@
 # Introduction
-Remark: This project will be updated if I need
+Remark: This project will be updated actively
 
 (Control Group of My Future Paper, without Task Planning, Exceptional Handling, and fully based on LLMs) This is a _quick start_ of one Chinese Scripting Language powered by AI. You can use it to open any text file. **No illegal use is allowed!** Free for commercial and academic applications.
 
