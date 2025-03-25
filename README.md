@@ -18,4 +18,4 @@ https://github.com/user-attachments/assets/1dae04e6-2683-4465-8a9f-7df8ba539bc6
 1. Download this whole project
 2. Replace "your-api-key" with your authentic API key in "main.py"
 3. Modify file "main.cmd" and change "python" to your actual python.exe (your filepath of the python kernel)
-4. Open a text script (e.g., ".aigc") with "main.cmd"
+4. Open a text script (*.aigc) with "main.cmd"
