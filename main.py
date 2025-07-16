@@ -21,7 +21,7 @@ def conversation(contents, chat_mode=False):
     "user": "andy"
   })
   headers = {
-    'Authorization': 'fk1357707141.BSCoDrkjDWq4N2aiATwpNRVnUL7WKimz726d4e68',
+    'Authorization': 'fk1357707141.BSCoDrkjDWq4N2aiATwpNRVnUL7WKimz726d4e68', # Replace it with your api key like this
     'Content-Type': 'application/json'
   }
   if not chat_mode:
@@ -44,7 +44,7 @@ def execute(commands):
 			for item in commands:
 				if item.startswith('python\n'):
 					command = item[7:]
-					if confirm(f'请问您要执行这个Python命令吗？\n{command}', 'AIGC脚本语言'):
+					if confirm(f'请问您要执行这个Python命令吗？\n{command}', 'AIGC脚本语言')=='OK':
 						exec(command)
 					else:
 						user_input+='\n用户因为如下原因拒绝执行命令：'+input('【AIGC】请输入拒绝执行命令的原因')+'\n请你针对该要求，重新给出修正版的完整解决方案，不要输出之前的代码，直接输出你更正之后的代码'
