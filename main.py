@@ -47,7 +47,7 @@ def execute(commands):
 					if confirm(f'请问您要执行这个Python命令吗？\n{command}', 'AIGC脚本语言')=='OK':
 						exec(command)
 					else:
-						user_input+='\n用户因为如下原因拒绝执行命令：'+input('【AIGC】请输入拒绝执行命令的原因：\n')+'\n请你针对该要求，重新给出修正版的完整解决方案，不要输出之前的代码，直接输出你更正之后的代码'
+						user_input+='\n用户因为如下原因拒绝执行命令：'+input('【AIGC】请输入拒绝执行命令的原因：\n【我】')+'\n请你针对该要求，重新给出修正版的完整解决方案，不要输出之前的代码，直接输出你更正之后的代码'
 						break
 
 					Incorrect = False
