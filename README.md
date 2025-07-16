@@ -15,6 +15,6 @@ https://github.com/user-attachments/assets/1dae04e6-2683-4465-8a9f-7df8ba539bc6
 3. An API key of 360 AI [click here to apply](https://ai.360.com/open)
 # Usage:
 1. Download this whole project
-2. Replace "your-api-key" with your authentic API key in "main.py"
+2. Replace the example api key with your authentic API key in the file "main.py"
 3. Modify the file "main.cmd" and change "python" to the actual filepath of your python kernel
 4. Open a text script (*.aigc) with "main.cmd"
