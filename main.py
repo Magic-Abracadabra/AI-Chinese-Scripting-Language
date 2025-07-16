@@ -1,4 +1,6 @@
 import requests, json, sys, traceback
+from pyautogui import confirm
+
 def conversation(contents, chat_mode=False):
   url = "https://api.360.cn/v1/chat/completions"
   payload = json.dumps({
@@ -19,7 +21,7 @@ def conversation(contents, chat_mode=False):
     "user": "andy"
   })
   headers = {
-    'Authorization': 'your-api-key',
+    'Authorization': 'fk1357707141.BSCoDrkjDWq4N2aiATwpNRVnUL7WKimz726d4e68',
     'Content-Type': 'application/json'
   }
   if not chat_mode:
@@ -41,10 +43,15 @@ def execute(commands):
 			commands = RT.split('```')[1::2]
 			for item in commands:
 				if item.startswith('python\n'):
-					exec(item[7:])
+					command = item[7:]
+					if confirm(f'请问您要执行这个Python命令吗？\n{command}', 'AIGC脚本语言'):
+						exec(command)
+					else:
+						user_input+='\n用户因为如下原因拒绝执行命令：'+input('【AIGC】请输入拒绝执行命令的原因')+'\n请你针对该要求，重新给出修正版的完整解决方案，不要输出之前的代码，直接输出你更正之后的代码'
+
 					Incorrect = False
 		except:
-			print('【出错，尝试纠正中】')
+			print('【出错，重新尝试中】')
 			user_input+='\n实际执行过程中出错，报错信息如下：'+traceback.format_exc()+'\n请你针对错误，重新给出修正版的完整解决方案，不要输出之前的代码，直接输出你更正之后的代码'
 	history += user_input
 	history += '\n'
