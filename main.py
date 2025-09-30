@@ -19,35 +19,21 @@ __builtins__.__import__ = install
 import requests, json, sys, traceback
 from pyautogui import confirm
 
+import os
+from openai import OpenAI
+
 def conversation(contents, chat_mode=False):
-  url = "https://api.360.cn/v1/chat/completions"
-  payload = json.dumps({
-    "model": "360/deepseek-r1",
-    "messages": [
-      {
-        "role": "user",
-        "content": contents
-      }
-    ],
-    "stream": chat_mode,
-    "temperature": 0.9,
-    "max_tokens": 2048,
-    "top_p": 0.5,
-    "top_k": 0,
-    "repetition_penalty": 1.05,
-    "num_beams": 1,
-    "user": "andy"
-  })
-  headers = {
-    'Authorization': 'fk1357707141.BSCoDrkjDWq4N2aiATwpNRVnUL7WKimz726d4e68', # Replace it with your api key like this
-    'Content-Type': 'application/json'
-  }
-  if not chat_mode:
-    null = ''
-    response = requests.request("POST", url, headers=headers, data=payload)
-    return eval(response.text)['choices'][0]['message']['content']
-  else:
-    return requests.request("POST", url, headers=headers, data=payload, stream=True).iter_lines()
+    client = OpenAI(
+        api_key=os.environ.get('fk1357707141.BSCoDrkjDWq4N2aiATwpNRVnUL7WKimz726d4e68'), # Replace it with your api key like this
+        base_url="https://api.deepseek.com")
+    response = client.chat.completions.create(
+        model="deepseek-chat",
+        messages=[
+            {"role": "user", "content": contents},
+        ],
+        stream=False
+    )
+    return response.choices[0].message.content
 
 
 def execute(commands):
@@ -85,4 +71,5 @@ if len(sys.argv) == 1:
 else:
 	with open(sys.argv[1], encoding='utf-8') as scripts:
 		execute(scripts.read())
+
 
