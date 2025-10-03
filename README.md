@@ -1,5 +1,5 @@
 # Introduction
-See Linux version [here](https://github.com/Magic-Abracadabra/AI-Chinese-Scripting-Language-Linux).
+See the Linux version [here](https://github.com/Magic-Abracadabra/AI-Chinese-Scripting-Language-Linux).
 Remark: This project will be updated actively
 
 (Control Group of My Future Paper, without Task Planning, Exceptional Handling, and fully based on LLMs)
