@@ -14,7 +14,7 @@ https://github.com/user-attachments/assets/1dae04e6-2683-4465-8a9f-7df8ba539bc6
 # Requirements:
 1. OS: Windows (see Linux [here](https://github.com/Magic-Abracadabra/AI-Chinese-Scripting-Language-Linux))
 2. A python environment
-3. An API key of 360 AI [click here to apply](https://ai.360.com/open)
+3. An API key of the deepseek AI.
 # Usage:
 1. Download this whole project
 2. Replace the example api key with your authentic API key in the file "main.py"
